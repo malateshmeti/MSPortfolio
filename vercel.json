@@ -4,3 +4,4 @@
   "framework": "create-react-app",
   "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
+
