@@ -67,7 +67,6 @@
   flex: 1 1 60%;
   max-width: 700px;
   color: #fff;
-  margin-top: -0px; /* adjust value as needed */
 }
 
 .ms-title {
@@ -107,7 +106,6 @@
 }
 
 /* Overlay */
-/* Overlay */
 .ms-card-overlay {
   position: absolute;
   left: 12px;
@@ -119,24 +117,22 @@
   padding: 12px 14px;
   border-radius: 12px;
   backdrop-filter: blur(8px);
-  
-  /* stronger background for readability */
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.55); /* stronger background for readability */
   border: 1px solid rgba(255,255,255,0.08);
 }
 
 /* Text improvements */
 .ms-card-text h3 {
   margin: 0;
-  color: #ffffff; /* pure white */
+  color: #ffffff;
   font-size: 1.05rem;
   font-weight: 700;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* makes text readable on any background */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
 .ms-card-text p {
   margin: 2px 0 0;
-  color: #e0e0e0; /* brighter gray */
+  color: #e0e0e0;
   font-size: 0.9rem;
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
@@ -145,7 +141,7 @@
 .ms-btn {
   display: inline-block;
   padding: 8px 14px;
-  background: #1c75b0;   /* solid accent color */
+  background: #1c75b0;
   border-radius: 10px;
   text-decoration: none;
   color: #fff;
@@ -156,5 +152,56 @@
 
 .ms-btn:hover {
   transform: translateY(-2px);
-  background: #1f9be5;  /* darker shade on hover */
+  background: #1f9be5;
+}
+
+/* ✅ Responsive Styles */
+
+/* Tablets & smaller laptops */
+@media (max-width: 992px) {
+  .ms-hero-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ms-card {
+    width: 100%;
+    max-width: 340px;
+    margin-top: 2rem;
+  }
+  .ms-card-img {
+    height: auto;
+    max-height: 420px;
+  }
+  .ms-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .ms-header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ms-header-right {
+    margin-top: 10px;
+  }
+  .ms-header-right a {
+    margin-left: 0;
+    margin-right: 18px;
+    font-size: 0.9rem;
+  }
+  .ms-title {
+    font-size: 2rem;
+  }
+  .ms-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .ms-card {
+    max-width: 280px;
+  }
+  .ms-card-img {
+    max-height: 300px;
+  }
 }
