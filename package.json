@@ -2,7 +2,6 @@
   "name": "ms-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
   "engines": {
     "node": "18"
   },
