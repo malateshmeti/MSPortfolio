@@ -3,10 +3,11 @@
   padding: 4rem 6%;
   background-color: #050507;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
+  overflow-x: hidden; /* ✅ prevents horizontal scroll */
 }
 
 .ms-skills-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -18,21 +19,24 @@
   margin-bottom: 2.5rem;
 }
 
+/* ✅ Responsive Grid */
 .ms-skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* exactly 4 per row */
-  gap: 20px; /* spacing between cards */
+  grid-template-columns: 1fr 1fr; /* 2 per row on mobile */
+  gap: 20px;
   justify-items: center;
 }
 
+/* Skill Card */
 .ms-skill-card {
-  width: 250px;   /* wider */
-  height: 140px;  /* shorter */
+  width: 100%;
+  max-width: 220px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* center content vertically */
-  padding: 20px;  /* balanced padding */
+  justify-content: center;
+  padding: 20px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -46,8 +50,25 @@
   background: rgba(255, 255, 255, 0.12);
 }
 
+/* Skill Icon */
 .ms-skill-icon {
-  width: 90px;   /* slightly smaller icon to fit rectangle */
-  height: 90px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 12px;
+}
+
+/* ✅ Responsive Breakpoints */
+
+/* Tablets */
+@media (min-width: 600px) {
+  .ms-skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  }
+}
+
+/* Laptops & Desktops */
+@media (min-width: 992px) {
+  .ms-skills-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  }
 }

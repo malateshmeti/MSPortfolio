@@ -6,9 +6,10 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: rgba(5,5,7,0.95);
+  background-color: rgba(5, 5, 7, 0.95);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  overflow-x: hidden; /* ✅ prevent right-side white bar */
 }
 
 .ms-header-container {
@@ -26,6 +27,11 @@
   font-weight: 700;
 }
 
+.ms-header-right {
+  display: flex;
+  align-items: center;
+}
+
 .ms-header-right a {
   color: #fff;
   margin-left: 35px;
@@ -36,4 +42,52 @@
 
 .ms-header-right a:hover {
   color: #3cb4ff;
+}
+
+/* ================= Mobile Styles ================= */
+.ms-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.ms-menu-toggle span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .ms-header-container {
+    flex-wrap: wrap;
+  }
+
+  .ms-header-right {
+    display: none; /* hide links initially */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(5, 5, 7, 0.98);
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+
+  .ms-header-right a {
+    margin: 12px 0;
+    font-size: 1rem;
+  }
+
+  .ms-header-right.active {
+    display: flex; /* show when toggled */
+  }
+
+  .ms-menu-toggle {
+    display: flex; /* show hamburger on mobile */
+  }
 }
