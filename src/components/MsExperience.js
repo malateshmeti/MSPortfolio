@@ -36,7 +36,7 @@ const experiences = [
     skills: "Salesforce, Apex, SOQL, Lightning Components",
     sections: [
       {
-        title: "Work Done:",
+        title: "Intern:",
         points: [
           "Gained hands-on experience in customizing Salesforce objects and workflows.",
           "Developed basic Apex classes and SOQL queries for data handling.",
