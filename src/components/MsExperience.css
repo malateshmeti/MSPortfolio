@@ -72,10 +72,19 @@
   padding-left: 20px;
   color: #eee;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6; /* ✅ slightly increased for readability */
 }
 
-/* ✅ Responsive Fixes */
+/* ✅ Tablet layout */
+@media (min-width: 768px) {
+  .ms-experience-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2-column layout */
+    gap: 28px;
+  }
+}
+
+/* ✅ Mobile Fixes */
 @media (max-width: 600px) {
   .ms-experience {
     padding: 3rem 1rem; /* reduce padding on small screens */

@@ -41,7 +41,7 @@
 /* Hero wrapper */
 .ms-hero {
   min-height: 100vh;
-  padding: 6rem 6% 4rem; /* Adjusted top padding for fixed header */
+  padding: 6rem 6% 4rem;
   background-color: #050507;
   background-image:
     linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
@@ -70,7 +70,7 @@
 }
 
 .ms-title {
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 5vw, 3.5rem); /* ✅ smooth scaling */
   margin: 0 0 1rem;
   font-weight: 800;
 }
@@ -78,14 +78,15 @@
 .ms-desc {
   color: #cfcfcf;
   font-size: 1.08rem;
-  line-height: 2.0;
+  line-height: 2;
   margin: 0;
 }
 
 /* Right card */
 .ms-card {
-  width: 360px;
-  flex: 0 0 360px;
+  width: 100%;
+  max-width: 360px;
+  flex: 0 0 auto;
 }
 
 .ms-card-inner {
@@ -100,7 +101,7 @@
 
 .ms-card-img {
   width: 100%;
-  height: 520px;
+  aspect-ratio: 3 / 4; /* ✅ responsive instead of fixed height */
   object-fit: cover;
   border-radius: 12px;
 }
@@ -117,11 +118,11 @@
   padding: 12px 14px;
   border-radius: 12px;
   backdrop-filter: blur(8px);
-  background: rgba(0, 0, 0, 0.55); /* stronger background for readability */
+  background: rgba(0, 0, 0, 0.55);
   border: 1px solid rgba(255,255,255,0.08);
 }
 
-/* Text improvements */
+/* Text */
 .ms-card-text h3 {
   margin: 0;
   color: #ffffff;
@@ -137,7 +138,7 @@
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-/* Button contrast */
+/* Button */
 .ms-btn {
   display: inline-block;
   padding: 8px 14px;
@@ -164,16 +165,11 @@
     text-align: center;
   }
   .ms-card {
-    width: 100%;
-    max-width: 340px;
     margin-top: 2rem;
-  }
-  .ms-card-img {
-    height: auto;
-    max-height: 420px;
+    max-width: 340px;
   }
   .ms-title {
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
   }
 }
 
@@ -185,14 +181,16 @@
   }
   .ms-header-right {
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
   }
   .ms-header-right a {
-    margin-left: 0;
-    margin-right: 18px;
+    margin: 0;
     font-size: 0.9rem;
   }
-  .ms-title {
-    font-size: 2rem;
+  .ms-hero {
+    padding: 5rem 6% 3rem; /* ✅ reduced spacing */
   }
   .ms-desc {
     font-size: 0.95rem;
@@ -200,8 +198,5 @@
   }
   .ms-card {
     max-width: 280px;
-  }
-  .ms-card-img {
-    max-height: 300px;
   }
 }
