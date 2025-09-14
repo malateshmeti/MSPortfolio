@@ -26,7 +26,7 @@ const projects = [
       "Implemented role-based dashboards for customers (booking services) and agents (managing jobs).",
       "Tested and documented APIs using Postman to ensure reliability and usability."
     ],
-    github: "https://github.com/malateshmeti/BringUp"
+    github: "https://github.com/malateshmeti/BringUpWebApp"
   }
 ];
 
