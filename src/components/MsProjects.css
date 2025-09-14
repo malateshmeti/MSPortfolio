@@ -28,6 +28,7 @@
 }
 
 /* Project Card */
+/* Card */
 .ms-project-card {
   padding: 24px;
   border-radius: 14px;
@@ -99,18 +100,3 @@
   margin-left: 6px;
 }
 
-/* ✅ Responsive Styles */
-
-/* Tablets */
-@media (min-width: 600px) {
-  .ms-projects-list {
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-  }
-}
-
-/* Laptops & Desktops */
-@media (min-width: 992px) {
-  .ms-projects-list {
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
-  }
-}
