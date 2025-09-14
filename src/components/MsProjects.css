@@ -3,7 +3,7 @@
   padding: 4rem 6%;
   background-color: #050507;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
-  overflow-x: hidden;
+  overflow-x: hidden; /* ✅ prevent horizontal scroll */
 }
 
 .ms-projects-container {
@@ -20,13 +20,14 @@
   margin-bottom: 2.5rem;
 }
 
-/* ✅ Vertical Layout (like Experience) */
+/* ✅ Grid Layout for Projects */
 .ms-projects-list {
-  display: flex;
-  flex-direction: column; /* stack vertically */
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column mobile */
   gap: 24px;
 }
 
+/* Project Card */
 .ms-project-card {
   padding: 24px;
   border-radius: 14px;
@@ -68,17 +69,13 @@
 /* Actions */
 .ms-project-actions {
   display: flex;
-  flex-wrap: wrap; /* ensures buttons wrap on smaller screens */
   gap: 10px;
   margin-top: 16px;
 }
 
 /* Button */
 .ms-project-btn {
-  flex: 1; /* buttons grow equally when side by side */
-  min-width: 120px;
   display: inline-flex;
-  justify-content: center;
   align-items: center;
   padding: 6px 12px;
   border-radius: 6px;
@@ -102,17 +99,18 @@
   margin-left: 6px;
 }
 
-/* ✅ Responsive Fixes */
-@media (max-width: 600px) {
-  .ms-projects {
-    padding: 3rem 1rem; /* reduce padding on mobile */
-  }
+/* ✅ Responsive Styles */
 
-  .ms-projects-title {
-    font-size: 1.8rem;
+/* Tablets */
+@media (min-width: 600px) {
+  .ms-projects-list {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
   }
+}
 
-  .ms-project-card {
-    padding: 18px;
+/* Laptops & Desktops */
+@media (min-width: 992px) {
+  .ms-projects-list {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
   }
 }
