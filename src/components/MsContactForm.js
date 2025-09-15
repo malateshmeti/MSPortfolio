@@ -26,6 +26,14 @@ const MsContactForm = () => {
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
       newErrors.email = "Please enter a valid email";
 
+   if (!formData.phone.trim()) {
+    newErrors.phone = "Phone number is required";
+  } 
+  if (!/^[6-9]\d{9}$/.test(formData.phone)) {
+    newErrors.phone = "Please enter a valid phone number";
+  }
+
+
     if (!formData.message.trim()) newErrors.message = "Message is required";
 
     return newErrors;

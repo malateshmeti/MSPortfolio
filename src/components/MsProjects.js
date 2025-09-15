@@ -4,31 +4,35 @@ import "./MsProjects.css";
 const projects = [
   {
     title: "Smart Loan Management & Reporting System",
-    tech: "Java, Spring Boot, Spring Security, Hibernate, MySQL, REST API, Git, JWT",
+    tech: "Java, Spring Boot, Spring Security, Hibernate, SQL, REST API, Git, JWT",
     points: [
       "Developed CRUD APIs for customer onboarding, loan creation, and repayment scheduling.",
       "Implemented loan eligibility, interest calculation, and EMI tracking features.",
       "Created secure role-based authentication and authorization using Spring Security & JWT.",
       "Optimized SQL queries and Hibernate mappings to improve transaction and report performance by ~30%.",
       "Built reporting APIs to provide real-time insights into loan performance, payment history, and outstanding balances.",
-      "Added admin dashboards for monitoring loans, updating schedules, and generating summaries."
+      "Added admin dashboards for monitoring loans, updating schedules, and generating summaries.",
+      "Ensured data integrity and compliance by implementing transaction management and validation rules.",
+      "Designed the system architecture for scalability, supporting future integration with third-party payment gateways and credit bureaus."
     ],
     github: "https://github.com/malateshmeti/BankingWebDev"
   },
   {
     title: "BringUp – Home Services Booking Platform",
-    tech: "Java, Spring Boot, Spring Security, MySQL, REST API, Git, Postman",
+    tech: "Java, Spring Boot, SQL, REST API, Git, Postman",
     points: [
-      "Developed a web application to connect end users with service agents (electricians, carpenters, plumbers, cleaners, painters).",
-      "Built secure authentication and authorization features using Spring Security.",
-      "Designed REST APIs for service booking, agent assignment, and job status tracking.",
+      "Developed a platform connecting users with service agents (electricians, carpenters, plumbers, cleaners, painters).",
+      "Designed REST APIs for booking services, assigning agents, and tracking job progress.",
       "Created database schema for users, services, and booking management with MySQL.",
-      "Implemented role-based dashboards for customers (booking services) and agents (managing jobs).",
-      "Tested and documented APIs using Postman to ensure reliability and usability."
+      "Implemented service availability and scheduling logic for efficient job allocation.",
+      "Integrated notification workflows to keep users and agents updated on booking status.",
+      "Tested and documented APIs using Postman to ensure reliability and usability.",
+      "Applied clean code practices and modular design, making the system maintainable and production-ready."
     ],
     github: "https://github.com/malateshmeti/BringUpWebApp"
   }
 ];
+
 
 function MsProjects() {
   // Handler for Project Website button

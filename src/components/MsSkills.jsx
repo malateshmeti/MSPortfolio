@@ -6,7 +6,7 @@ const skills = [
   // Backend
   { name: "Java", icon: "/icons/java.svg" },
   { name: "Spring Boot", icon: "/icons/springboot.png" },
-  { name: "Hibernate", icon: "/icons/hibernate.png" },
+  { name: "Hibernate", icon: "/icons/Hibernate.jpeg" },
   { name: "JDBC", icon: "/icons/jdbc.png" },
   // Databases
   { name: "SQL", icon: "/icons/sql.png" },

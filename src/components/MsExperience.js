@@ -7,30 +7,30 @@ const experiences = [
     company: "Craft Silicon Asia, Bengaluru",
     duration: "Nov 2023 – Present (1.11 Years)",
     skills:
-      "SQL Server, Database Design, Query Optimization, Stored Procedures, ETL, Performance Tuning, Java, Spring Boot, REST API, Git, MySQL, Postman",
+      "SQL Server, Database Design, Query Optimization, Stored Procedures, Performance Tuning, Java, Spring Boot, REST API, Git, MySQL, Postman",
     sections: [
       {
         title: "Core Work (SQL Server):",
         points: [
           "Specialized in SQL Server development, focusing on query optimization, stored procedures, and database performance tuning.",
           "Designed and managed efficient database schemas to support high-volume financial transactions.",
-          "Built and optimized ETL workflows for seamless data processing and reporting.",
+          "Enhanced transaction reliability and reduced processing delays by implementing indexing and query optimization strategies.",
           "Collaborated with cross-functional teams to ensure reliable, secure, and scalable financial data systems."
         ]
       },
       {
-        title: "Additional Projects (Skill Development):",
+        title: "Backend Development & APIs:",
         points: [
           "Developed and secured REST APIs for financial operations using Spring Boot & Spring Security.",
-          "Built loan management features like EMI scheduling and automated payment tracking.",
-          "Practiced clean code, version control (Git), and API testing (Postman) to simulate real-world development workflows.",
-          "Strengthened full-stack foundation by integrating backend APIs with frontend prototypes."
+          "Built loan management features like EMI scheduling, repayment tracking, and interest calculation.",
+          "Optimized backend performance by reducing API response times through query tuning and caching strategies.",
+          "Followed clean code principles, version control (Git), and API testing (Postman) to deliver production-ready modules."
         ]
       }
     ]
   },
   {
-    role: "Salesforce Developer Intern",
+    role: "Salesforce Developer - Intern",
     company: "Utilitarians Labs, Bengaluru",
     duration: "Oct 2023 (1 Month)",
     skills: "Salesforce, Apex, SOQL, Lightning Components",
@@ -38,14 +38,16 @@ const experiences = [
       {
         title: "Intern:",
         points: [
-          "Gained hands-on experience in customizing Salesforce objects and workflows.",
-          "Developed basic Apex classes and SOQL queries for data handling.",
-          "Worked with Lightning components to enhance UI features."
+          "Gained hands-on experience in customizing Salesforce objects, fields, and workflows.",
+          "Developed and tested basic Apex classes, triggers, and SOQL queries for data handling.",
+          "Worked with Lightning components to improve UI features and user experience.",
+          "Collaborated with senior developers on debugging, deployments, and project documentation."
         ]
       }
     ]
   }
 ];
+
 
 function MsExperience() {
   return (

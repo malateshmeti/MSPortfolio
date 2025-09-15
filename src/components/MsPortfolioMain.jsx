@@ -39,7 +39,7 @@ const MsPortfolioMain = () => {
 
           <div className="ms-card">
             <div className="ms-card-inner">
-              <img src="/MyImage4.jpeg" alt="profile dummy" className="ms-card-img" />
+              <img src="/ImageFinal.png" alt="profile dummy" className="ms-card-img" />
 
               <div className="ms-card-overlay">
                 <div className="ms-card-text">
