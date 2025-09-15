@@ -1,0 +1,103 @@
+/* Footer Section */
+.ms-footer-section {
+  background-color: #000000; /* fully black */
+  padding: 4rem 6%;
+  color: #e5e7eb; /* light text */
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Container */
+.ms-footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Top row: Name left, Connect right */
+.ms-footer-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+/* Name */
+.ms-footer-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Connect text */
+.ms-footer-connect-text {
+  font-size: 16px;       /* text size, adjust as needed */
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 200px;    /* push it to the right; increase/decrease number */
+  padding-right: 325px;   /* extra space from the edge */
+}
+
+/* Bottom row: Tagline left, Social Links right */
+.ms-footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+/* Tagline */
+.ms-footer-tagline {
+  font-size: 1rem;
+  color: #9ca3af;
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Social icons */
+.ms-footer-icons {
+  display: flex;
+  gap: 0.75rem;        /* space between each icon, adjust: 0.5rem → 1rem */
+  margin-left: 200px;  /* distance from left (aligns under Connect) */
+  padding-right: 200px; /* optional distance from container edge */
+}
+
+.ms-footer-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;          /* slightly bigger for better visibility */
+  height: 40px;
+  border-radius: 50%;   /* circular buttons */
+  background-color: #1a1a1a; /* darker grey for contrast with black footer */
+  color: #ffffff;       /* white icon color for clarity */
+  font-size: 20px;      /* icon size */
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* subtle shadow */
+}
+
+.ms-footer-icons a:hover {
+  background-color: #2563eb; /* blue hover */
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* hover shadow */
+}
+
+/* Footer Bottom */
+.ms-footer-bottom {
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-align: center;
+}

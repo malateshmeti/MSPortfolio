@@ -4,6 +4,7 @@ import MsSkills from "./components/MsSkills";
 import MsExperience from "./components/MsExperience";
 import MsProjects from "./components/MsProjects";
 import MsContactForm from "./components/MsContactForm"; 
+import MsFooter from "./components/MsFooter"; 
 
 
 import "./App.css";
@@ -16,6 +17,7 @@ function App() {
       <MsExperience /> 
       <MsProjects /> 
       <MsContactForm /> 
+      <MsFooter/>
     </div>
   );
 }
